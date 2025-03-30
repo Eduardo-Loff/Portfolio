@@ -1,0 +1,32 @@
+@import url(variaveis.css);
+
+.agradecimento{
+    justify-content: center;
+    text-align: center;
+    font-size: 30px;
+}
+
+.agradecimento h1{
+    color: var(--d_color);
+}
+
+.agradecimento p{
+    color: var(--t_color);
+    margin: 15px 0;
+}
+
+button{
+    margin: 40px auto;
+    border: 1px solid var(--d_color);
+    background: none;
+    color: var(--d_color);
+    width: 200px;
+    height: 50px;
+    font-size: 22px;
+}
+
+button:hover{
+    background-color: var(--d_color);
+    color: var(--t_color);
+    transition: 1.2s;
+}

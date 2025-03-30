@@ -1,0 +1,520 @@
+@import url(variaveis.css);
+
+hr{
+    width: 80%;
+    height: 2px;
+    border: none;
+    background-color: var(--d_color);
+    margin: auto;
+}
+
+/* CABEÇALHO */
+
+.cabecalho{
+    width: 100%;
+    height: 60px;
+    background-color: var(--d_color);
+    margin: auto;
+    display: flex;
+    text-align: center;
+    justify-content: space-between;
+    font-size: 30px;
+    color: var(--t_color);  
+}
+
+.cabecalho p, .cabecalho a{
+    margin: 10px auto;
+    text-decoration: none;
+    color: var(--t_color);
+}
+
+
+.amenu{
+    display: none;
+}
+
+.menu{
+    display: none;
+}
+
+/* INICIO */
+
+.inicio{
+    display: flex;
+    margin: 10px 10px 100px;
+    width: 80%;
+    height: 300px;
+}
+
+.itext{
+    margin: 12px 50px;
+    width: 100%;
+    padding: 40px;
+    height: 240px;
+}
+
+h1{
+    color: var(--d_color);
+    font-size: 60px;
+}
+
+.itext p{
+    font-size: 40px;
+    color: var(--t_color);
+    border-bottom: 1px solid var(--d_color);
+}
+
+.iimg{
+    padding: 50px;
+    margin-right: auto;
+}
+
+/* HABILIDADES */
+
+.habilidades{
+    display: block;
+    margin: auto;
+    width: 80%;
+}
+
+.habilidades h2{
+    text-align: center;
+    color: var(--d_color);
+    font-size: 30px;
+}
+
+.habilidades p{
+    color: var(--t_color);
+    text-align: center;
+    font-size: 22px;
+}
+
+.hbox{
+    margin: 20px 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+.hcard{
+    display: flex;
+    color: var(--d_color);
+    margin: 10px;
+    width: 1000px;
+    background: none;
+    border: 2px solid var(--d_color);
+    border-radius: 15px;
+    justify-content: space-between;
+}
+
+.htext{
+    font-size: 24px;
+    margin: 2px;
+    
+}
+
+.hcard p{
+    font-size: 15px;
+    text-align: left; 
+}
+
+.hicon{
+    margin: 0 auto;
+}
+
+/* PROJETOS */
+
+.projetos{
+    display: block;
+    margin: 20px auto;
+    width: 80%;
+}
+
+.projetos h2{
+    color: var(--d_color);
+    font-size: 30px;
+}
+
+.projetos p{
+    color: var(--t_color);
+    font-size: 22px;
+}
+
+.pbox{
+    display: block;
+    margin: 20px auto;
+}
+
+.pcards{
+    display: flex;
+    width: 100%;
+    text-align: right;
+}
+
+.ptext{
+    position: relative;
+    display: block;
+    margin: 0  50px;
+    border-bottom: 1px solid var(--d_color);
+}
+
+.pcards h3{
+    color: var(--d_color);
+    font-size: 26px;
+}
+
+.pcards p{
+    font-size: 20px;
+}
+
+.pbutton button{
+    position: absolute;
+    bottom: 10px; 
+    right: 10px;     
+    background: none;
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--d_color);
+    color: var(--d_color);
+}
+
+.pbutton button:hover{
+    background: var(--d_color);
+    color: var(--t_color);
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+/* CONTATO */
+
+.contato{
+    display: block;
+    margin: 20px;
+    width: 80%;
+    text-align: center;
+}
+
+.contato h2{
+    color: var(--d_color);
+    font-size: 30px;
+}
+
+.contato p{
+    color: var(--t_color);
+    font-size: 22px;
+}
+
+.carea{
+    display: flex;
+    justify-content: space-between;
+}
+
+.contform{
+    margin: auto 20%;
+    width: 80%;
+    position: relative;
+}
+
+fieldset{
+    display: block;
+    border: none;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+input{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--d_color);
+    width: 100%;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--t_color);
+}
+
+.coutros{
+    text-align: right;
+}
+
+.coutros a{
+    text-decoration: none;
+    color: var(--t_color);
+}
+
+textarea{
+    background: none;
+    border: none;
+    border-bottom: 1px solid var(--d_color);
+    width: 100%;
+    height: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    font-size: 20px;
+    color: var(--t_color);
+}
+
+.contform button{
+    position: absolute;
+    bottom: -10; 
+    right: 0;     
+    background: none;
+    height: 30px;
+    width: 100px;
+    border: 1px solid var(--d_color);
+    margin-top: 50px;
+    color: var(--d_color);
+    font-size: 20px;
+}
+
+.contform button:hover{
+    background: var(--d_color);
+    color: var(--t_color);
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
+
+footer{
+    display: flex;
+    width: 100%;
+    margin: 50px auto;
+    margin-bottom: 0;
+    border-top: 1px solid var(--d_color);
+    justify-content: space-between;
+    text-align: left;
+}
+
+.fblock{
+    margin: 10px;
+    display: block;
+}
+
+.ficons{
+    margin: 10px;
+    color: var(--d_color);
+}
+
+footer p{
+    color: var(--d_color);
+}
+
+footer a{
+    text-decoration: none;
+    color: var(--d_color);
+}
+
+
+/* TELAS MENORES */
+@media screen and (max-width: 1015px){
+    
+    /* Gerais */
+
+    *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+    }
+        
+    html{
+            margin: 0;
+            padding: 0;
+            background-color: var(--bg_color);
+            font-family: 'Inter';
+            box-sizing: border-box;
+    }
+
+
+
+    /* Ocultar menu desktop */
+    .cabecalho{
+        display: none;
+    }
+
+    /* Menu Mobile: */
+
+    .amenu{
+        color: var(--d_color);
+        position: absolute;
+        top: 0;
+        right: 0;
+        background: none;
+        border: none;
+        display: block;
+    }
+
+    .menu{
+        background-color: var(--d_color);
+        height: 100vh;
+        position: fixed;
+        display: block;
+        top: 0;
+        right: 0;
+        z-index: 9999999;
+        width: 0%;
+        overflow: hidden;
+        transition: 1.2s;
+        text-align: right;
+        
+    }
+
+    .menu.abrir-menu{
+        width: 40%;
+        padding-right: 20px;
+    }
+
+    .menu a{
+        text-decoration: none;
+        font-size: 22px;
+        color: var(--t_color);
+        margin: 10px 0;
+    }
+
+    .fmenu{
+        color: var(--t_color);
+        background: none;
+        border: none;
+    }
+
+    /* Seção Ínicio: */
+
+    .inicio{
+        display: block;
+        width: 100%;
+        margin: 0;
+        padding: 0;
+        margin-bottom: auto;
+    }
+
+    .itext{
+        display: block;
+        margin: 20px 0;
+        margin-bottom: 0;
+        padding: 0;
+        text-align: left;
+    }
+    
+    .itext h1{
+        font-size: 60px;
+    }
+
+    .itext p{
+        font-size: 25px;
+    }
+
+    .iimg{
+        margin: 0;
+        padding: 0;
+        margin-bottom: 100px;
+    }
+
+    .iimg img{
+        width: 80%;
+        height: auto;
+        margin: 0 10%;
+        border-radius: 20px;
+    }
+
+
+    hr{
+        visibility: hidden;
+    }
+
+    .habilidades{
+        padding: 0;
+        display: block;
+        margin: 0;
+        margin-top: 80%;
+        width: 100%;
+    }
+
+    .hbox{
+        display: block;
+        padding: 20px 0;
+    }
+
+    .hcard{
+        display: flex;
+        margin: 10px auto;
+        width: 80%;
+    }
+
+    .projetos{
+        padding: 0;
+        margin: auto;
+        display: block;
+        width: 90%;
+    }
+
+    .projetos p{
+        border-bottom: 1px solid var(--d_color);
+    }
+
+    .pcards{
+        display: block;
+        padding: 0;
+        margin: 0;
+        width: 100%;
+        text-align: left;
+    }
+
+    .pcards img{
+        width: 100%;
+        height: auto;
+    }
+
+    .ptext{
+        display: block;
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        font-size: 10px;
+        border-bottom: none;
+    }
+
+    .ptext p{
+        border-bottom: none;
+        margin-bottom: 100px;
+    }
+
+    .pbutton{
+        display: flex;
+    }
+
+    .pbutton button{     
+        background: none;
+        width: 100px;
+        height: 50px;
+        border: 1px solid var(--d_color);
+        color: var(--d_color);
+        padding: 10px 20px;
+    }
+
+    .contato{
+        margin: 0;
+        padding: 10px 0;
+        display: block;
+        text-align: left;
+        margin-left: 10px;
+    }
+
+    .carea{
+        margin: 20px 0;
+        padding: 0;
+        display: block;
+    }
+
+    .contform{
+        margin: 20px 0;
+    }
+
+    .coutros{
+        margin: 0;
+        text-align: left;
+    }
+
+    footer{
+        margin: 0;
+        padding: 0;
+        display: block;
+    }
+}

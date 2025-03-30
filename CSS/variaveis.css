@@ -1,0 +1,20 @@
+:root{
+    --bg_color: #0f0e17;
+    --t_color: #fffffe;
+    --p_color: #a7a9be;
+    --d_color: #ff8906;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html{
+    margin: 0;
+    padding: 0;
+    background-color: var(--bg_color);
+    font-family: 'Inter';
+    scroll-behavior: smooth;
+}
