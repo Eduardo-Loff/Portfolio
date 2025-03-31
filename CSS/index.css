@@ -93,6 +93,7 @@ h1{
     margin: 20px 0;
     display: flex;
     justify-content: space-between;
+    gap: 20px;
 }
 
 .hcard{
@@ -104,6 +105,12 @@ h1{
     border: 2px solid var(--d_color);
     border-radius: 15px;
     justify-content: space-between;
+    
+}
+
+.hcard:hover{
+    transform: scale(1.025);
+    transition: 1.5s;
 }
 
 .htext{
@@ -150,6 +157,12 @@ h1{
     text-align: right;
 }
 
+.pcards2{
+    display: flex;
+    width: 100%;
+    text-align: left;
+}
+
 .ptext{
     position: relative;
     display: block;
@@ -157,12 +170,12 @@ h1{
     border-bottom: 1px solid var(--d_color);
 }
 
-.pcards h3{
+.pcards h3, .pcards2 h3{
     color: var(--d_color);
     font-size: 26px;
 }
 
-.pcards p{
+.pcards p, .pcards2 p{
     font-size: 20px;
 }
 
@@ -183,6 +196,26 @@ h1{
     transition: 1.5s;
     transform: scale(1.2);
 }
+
+
+.pbutton2 button{
+    position: absolute;
+    bottom: 10px; 
+    left: 10px;     
+    background: none;
+    width: 100px;
+    height: 50px;
+    border: 1px solid var(--d_color);
+    color: var(--d_color);
+}
+
+.pbutton2 button:hover{
+    background: var(--d_color);
+    color: var(--t_color);
+    transition: 1.5s;
+    transform: scale(1.2);
+}
+
 
 /* CONTATO */
 
@@ -449,7 +482,7 @@ footer a{
         border-bottom: 1px solid var(--d_color);
     }
 
-    .pcards{
+    .pcards, .pcards2{
         display: block;
         padding: 0;
         margin: 0;
@@ -457,7 +490,7 @@ footer a{
         text-align: left;
     }
 
-    .pcards img{
+    .pcards img, .pcards2 img{
         width: 100%;
         height: auto;
     }
@@ -476,11 +509,11 @@ footer a{
         margin-bottom: 100px;
     }
 
-    .pbutton{
+    .pbutton, .pbutton2{
         display: flex;
     }
 
-    .pbutton button{     
+    .pbutton button, .pbutton2 button{     
         background: none;
         width: 100px;
         height: 50px;
